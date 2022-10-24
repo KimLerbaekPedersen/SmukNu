@@ -24,7 +24,6 @@ h1{
 // STYLE PRODUKT SECTION END
 
 // STYLE REVIEW SECTION START
-    
 .review-content{
     width: 100%;
     font-size: 20px;
@@ -46,7 +45,7 @@ h1{
     }
 
     .name{
-        padding-top: 18px;
+        padding-top: 20px;
         margin-bottom: 18px;
     }
 }
@@ -70,7 +69,7 @@ hr{
     }
 
     .review{
-        padding: 45px 30px 0 30px;
+        padding: 45px 40px 0 40px;
     }
 
     strong{
@@ -88,49 +87,53 @@ hr{
     }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $tablet) and (max-width: $desktop){
     .review-content, .review-two {
         display: grid;
         grid-template: repeat(2, auto) / repeat(3, auto);
     }
     
     .review-content {
-        .name {
-            grid-row-start: 2;
-            padding-top: 0px !important;
+        .review {
+            padding: 0 !important;
+            align-self: center;
+            text-align: left;
+            width: 85%;
         }
         
-        img {
-            grid-column-start: 1;
-            grid-row-start: 1;
-            margin: 20px 20px;
-        }
+            .name {
+                grid-row-start: 2;
+                margin: 0 0 50px 20px;
+            }
+        
+                img {
+                    grid-column-start: 1;
+                    grid-row-start: 1;
+                    margin: 0 30px 0 50px;
+                }
     }
     
     hr {
         display: none;
     }
     
-    .review {
-        padding: 0 !important;
-        align-self: center;
-        text-align: left;
-    }
-    
     .review-two {
-        img {
-            grid-column-start: 3;
-            margin: 20px 20px !important;
-        }
         .review {
             grid-row-start: 1;
-            padding-top: 0px !important;
+            text-align: left;
         }
-        
-        .name {
-            grid-column-start: 3;
-            padding-top: 0px;        
-        }
+
+            .name {
+                grid-column-start: 3;
+                margin: 0 0 50px 20px;        
+                align-self: flex-start;
+            }
+            
+            img {
+                    align-self: flex-end;
+                    grid-column-start: 3;
+                    margin: 0 30px 0 50px;
+                }
     }
 }
 // STYLE REVIEW SECTION END
