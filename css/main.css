@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -22,7 +23,7 @@ body {
 }
 
 .show {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9019607843);
 }
 
 .nav-container {
@@ -32,6 +33,7 @@ body {
   align-items: center;
   height: 80px;
   padding: 0 14px 0 14px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
 #menu {
@@ -67,7 +69,7 @@ body {
   fill: #FA96AA;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 1024px) {
   #burger {
     display: block;
     cursor: pointer;
@@ -111,6 +113,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* HUSK AT SLETTE DEN FØRST ../ SÅ DEN KAN VISES UDEN LIVE SERVER */
   background-image: url(../../assets/headers/front.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,6 +147,26 @@ body {
   background-color: #FA96AA;
   width: 320px;
   height: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 30px;
   border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 728px) {
+  .hero .hero-content {
+    width: 668px;
+  }
+  .hero .hero-content button {
+    width: 608px;
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

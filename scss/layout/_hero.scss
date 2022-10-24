@@ -1,6 +1,7 @@
 .hero{
     @include flex-center;
-    background-image: url(../../assets/headers/front.jpg);
+    /* HUSK AT SLETTE DEN FØRST ../ SÅ DEN KAN VISES UDEN LIVE SERVER */ 
+    background-image: url(../../assets/headers/front.jpg); 
     @include cover-background;
     height: 700px;
     font-family: $font-quick-sand;
@@ -11,29 +12,45 @@
         height: 384px;
         @include flex-center-column;
         text-align: center;
-
+        
         h1{
             font-size: 54px;
             font-weight: bold;
             text-transform: uppercase;
             margin: 0 62px 14px 62px;
-
+            
             p{
                 font-size: 18px;
             }
         }
-
+        
         span{
             text-transform: uppercase;
         }
-
+        
         button{
             background-color: $btn-color;
             width: 320px;
             height: 60px;
+            box-shadow: 0 3px 6px $box-shadow-color;
             border-radius: 30px;
             border: none;
+            font-weight: bold;
+            font-size: 18px;
+            color: $font-color-white;
+            margin-top: 24px;
         }
     }
 }
 
+@media only screen and (min-width: $tablet) {
+    .hero{
+        .hero-content{
+            width: 668px;
+            
+            button{
+                width: 608px;
+            }
+        }
+    }
+}
