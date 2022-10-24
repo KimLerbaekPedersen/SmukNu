@@ -1,5 +1,5 @@
 // H1 AND SPAN STYLE START
-h1{
+.review-header{
     @include flex-center-column;
     font-weight: bold;
     font-size: 54px;
@@ -20,6 +20,21 @@ h1{
     @include flex-center;
     height: auto;
     margin-top: 44px;
+
+}
+
+.product-header{
+    @include flex-center-column;
+    font-weight: bold;
+    font-size: 54px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    font-family: $font-quick-sand;
+    font-weight: bold;
+
+    span{
+        color: $font-color-pink;
+    }
 }
 // STYLE PRODUKT SECTION END
 
