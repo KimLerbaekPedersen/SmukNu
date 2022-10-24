@@ -1,7 +1,6 @@
 .hero{
-    @include flex-center;
-    /* HUSK AT SLETTE DEN FØRST ../ SÅ DEN KAN VISES UDEN LIVE SERVER */ 
-    background-image: url(../../assets/headers/front.jpg); 
+    @include flex-center; 
+    background-image: url(../assets/headers/front.jpg); 
     @include cover-background;
     height: 700px;
     font-family: $font-quick-sand;

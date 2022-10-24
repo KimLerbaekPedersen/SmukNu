@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -113,8 +112,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* HUSK AT SLETTE DEN FØRST ../ SÅ DEN KAN VISES UDEN LIVE SERVER */
-  background-image: url(../../assets/headers/front.jpg);
+  background-image: url(../assets/headers/front.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,6 +162,35 @@ body {
     width: 608px;
   }
 }
+.member {
+  background-color: #F7F0F2;
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.member div h1 {
+  margin: 44px 66px 0 66px;
+  font-size: 54px;
+  font-weight: bold;
+}
+.member div p {
+  margin: 14px 0 22px 0;
+  font-size: 18px;
+}
+.member div button {
+  background-color: #FA96AA;
+  width: 320px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1607843137);
+  color: #fff;
+  font-size: 18px;
+}
+
 .product {
   display: flex;
   align-items: center;
