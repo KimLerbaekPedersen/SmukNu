@@ -26,13 +26,13 @@
     height: auto;
     margin-top: 44px;
     font-family: $font-quick-sand;
-    font-weight: bold;
-
-        div{
+    
+    div{
+        
+        h1{
+            font-weight: bold;
+            font-size: 54px;
             text-transform: uppercase;
-
-            h1{
-                font-size: 54px;
                 
                 span{
                     @include flex-center-horizontal;

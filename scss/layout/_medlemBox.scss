@@ -1,6 +1,7 @@
 .member{
     background-color: $landing-page-medlem-bg-color;
     height: auto;
+    width: 100%;
     font-family: $font-quick-sand;
     @include flex-center;
     text-align: center;
@@ -24,9 +25,10 @@
             height: 60px;
             border: none;
             border-radius: 30px;
-            box-shadow: $box-shadow-color;
+            box-shadow: 0 3px 6px $box-shadow-color;
             color: $font-color-white;
             font-size: 18px;
+            margin-bottom: 70px;
         }
     }
 }
