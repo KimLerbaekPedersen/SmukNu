@@ -169,4 +169,37 @@ body {
   align-items: center;
   justify-content: center;
   height: auto;
+  margin-top: 44px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+.product div {
+  text-transform: uppercase;
+}
+.product div h1 {
+  font-size: 54px;
+}
+.product div h1 span {
+  color: #FA96AA;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 44px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+.review div {
+  text-transform: uppercase;
+}
+.review div h1 {
+  font-size: 54px;
+}
+.review div h1 span {
+  display: flex;
+  justify-content: center;
+  color: #FA96AA;
 }/*# sourceMappingURL=main.css.map */
