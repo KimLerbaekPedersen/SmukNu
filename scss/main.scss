@@ -1,8 +1,21 @@
 // ABSTRACTS IMPORT START
 @import 'abstracts/variables';
 @import 'abstracts/fonts';
+@import 'abstracts/mixins';
 // ABSTRACTS IMPORT END
 
 // BASE IMPORT START
 @import 'base/global';
 // BASE IMPORT END
+
+// LAYOUT IMPORT START
+@import 'layout/footer';
+@import 'layout/navbar';
+// LAYOUT IMPORT END  
+
+// PAGES IMPORT START  
+@import 'pages/forside';
+@import 'pages/medlem';
+@import 'pages/produkter';
+@import 'pages/sundhed';
+// PAGES IMPORT END  
