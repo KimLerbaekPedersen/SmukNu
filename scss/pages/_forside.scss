@@ -1,0 +1,44 @@
+// STYLE PRODUKT SECTION START
+.product{
+    @include flex-center;
+    height: auto;
+    margin-top: 44px;
+    font-family: $font-quick-sand;
+    font-weight: bold;
+
+        div{
+            text-transform: uppercase;
+
+            h1{
+                font-size: 54px;
+                
+                span{
+                    color: $font-color-pink;
+                }
+            }
+        }
+}
+// STYLE PRODUKT SECTION END
+
+// STYLE REVIEW SECTION START
+.review{
+    @include flex-center;
+    height: auto;
+    margin-top: 44px;
+    font-family: $font-quick-sand;
+    font-weight: bold;
+
+        div{
+            text-transform: uppercase;
+
+            h1{
+                font-size: 54px;
+                
+                span{
+                    @include flex-center-horizontal;
+                    color: $font-color-pink;
+                }
+            }
+        }
+}
+// STYLE REVIEW SECTION END
