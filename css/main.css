@@ -154,4 +154,19 @@ body {
   font-size: 18px;
   color: #fff;
   margin-top: 24px;
+}
+
+@media only screen and (min-width: 728px) {
+  .hero .hero-content {
+    width: 668px;
+  }
+  .hero .hero-content button {
+    width: 608px;
+  }
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

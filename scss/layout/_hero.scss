@@ -43,3 +43,14 @@
     }
 }
 
+@media only screen and (min-width: $tablet) {
+    .hero{
+        .hero-content{
+            width: 668px;
+            
+            button{
+                width: 608px;
+            }
+        }
+    }
+}
