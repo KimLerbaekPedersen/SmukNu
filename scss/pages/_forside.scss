@@ -27,8 +27,10 @@ h1{
     
 .review-content{
     width: 100%;
+    font-size: 20px;
     text-align: center;
     font-family: $font-quick-sand;
+    color: $font-color-grey;
 
     img{
         border-radius: 50%;
@@ -36,28 +38,44 @@ h1{
     }
 
     strong{
-        color: $font-color-grey;
+        font-weight: bold;
     }
 
     .review{
-        padding-top: 45px;
+        padding: 45px 40px 0 40px;
     }
 
     .name{
         padding-top: 18px;
+        margin-bottom: 18px;
     }
 }
     
 hr{
-    width: 320px;
+    margin: auto;
+    width: 85%;
     color: $hr-color;
-    margin: 18px 30px 0 30px ;
 }
 
 .review-two{
     width: 100%;
+    font-size: 20px;
     text-align: center;
     font-family: $font-quick-sand;
+    color: $font-color-grey;
+
+    .name{
+        padding-top: 20px;
+        margin-bottom: 18px;
+    }
+
+    .review{
+        padding: 45px 30px 0 30px;
+    }
+
+    strong{
+        font-weight: bold;
+    }
 
     img{
         margin-top: 55px;
@@ -69,46 +87,50 @@ hr{
         margin-bottom: 60px;
     }
 }
-// STYLE REVIEW SECTION END
 
 @media only screen and (min-width: $tablet) {
     .review-content, .review-two {
         display: grid;
         grid-template: repeat(2, auto) / repeat(3, auto);
     }
-
+    
     .review-content {
         .name {
             grid-row-start: 2;
-            padding: 0px !important;
+            padding-top: 0px !important;
         }
-
+        
         img {
             grid-column-start: 1;
             grid-row-start: 1;
+            margin: 20px 20px;
         }
     }
-
+    
     hr {
         display: none;
     }
-
+    
     .review {
-        padding: 0px !important;
+        padding: 0 !important;
         align-self: center;
+        text-align: left;
     }
-
+    
     .review-two {
         img {
             grid-column-start: 3;
-            margin-top: 0px !important;
+            margin: 20px 20px !important;
         }
         .review {
             grid-row-start: 1;
+            padding-top: 0px !important;
         }
         
         .name {
             grid-column-start: 3;
+            padding-top: 0px;        
         }
     }
 }
+// STYLE REVIEW SECTION END
