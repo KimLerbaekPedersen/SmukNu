@@ -3,4 +3,147 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 148px;
+  height: 40px;
+}
+
+#nav {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+
+.show {
+  background-color: #000;
+}
+
+.nav-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 14px 0 14px;
+}
+
+#menu {
+  transition: all 800ms ease;
+  cursor: pointer;
+  border-radius: 0 0 15px 15px;
+  font-family: "Quicksand", sans-serif;
+}
+#menu ul {
+  display: flex;
+  list-style: none;
+  margin: 14px 14px 18px 0;
+  align-items: flex-end;
+  gap: 15px;
+}
+#menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+}
+#menu a:hover {
+  color: #FA96AA;
+  -webkit-text-decoration: underline #FA96AA;
+          text-decoration: underline #FA96AA;
+}
+
+#burger {
+  display: none;
+  width: 27px;
+  height: 27px;
+  margin-bottom: 7px;
+  fill: #FA96AA;
+}
+
+@media (max-width: 728px) {
+  #burger {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+  #burger:focus {
+    border: none;
+    outline: none;
+  }
+  nav {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
+    transition: all 800ms ease-in-out;
+    height: 168px;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav.show {
+    -webkit-clip-path: circle(200% at 100% 0);
+            clip-path: circle(200% at 100% 0);
+    transition-duration: 800ms;
+  }
+  .nav-container {
+    padding-right: 15px;
+  }
+  #menu a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #menu ul:hover {
+    color: #FA96AA;
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/headers/front.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  font-family: "Quicksand", sans-serif;
+}
+.hero .hero-content {
+  background-color: #F7F0F2;
+  width: 100%;
+  height: 384px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.hero .hero-content h1 {
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 62px 14px 62px;
+}
+.hero .hero-content h1 p {
+  font-size: 18px;
+}
+.hero .hero-content span {
+  text-transform: uppercase;
+}
+.hero .hero-content button {
+  background-color: #FA96AA;
+  width: 320px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
