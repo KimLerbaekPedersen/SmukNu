@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 143px;
+    background-color: $footer-bg-color;
+    width: 100%;
+
+    .soMe-icon{
+        display: flex;
+        gap: 30px;
+
+        a{
+            font-size: 22px;
+            color: $font-color-white;
+        }
+    }
+
+    div{
+        margin-top: 24px;
+    }
+}

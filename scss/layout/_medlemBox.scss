@@ -1,0 +1,34 @@
+.member{
+    background-color: $landing-page-medlem-bg-color;
+    height: auto;
+    width: 100%;
+    font-family: $font-quick-sand;
+    @include flex-center;
+    text-align: center;
+
+    div{
+        
+        h1{
+            margin: 44px 66px 0 66px;
+            font-size: 54px;
+            font-weight: bold;
+        }
+
+        p{
+            margin: 14px 0 22px 0;
+            font-size: 18px;
+        }
+
+        button{
+            background-color: $btn-color;
+            width: 320px;
+            height: 60px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 3px 6px $box-shadow-color;
+            color: $font-color-white;
+            font-size: 18px;
+            margin-bottom: 70px;
+        }
+    }
+}

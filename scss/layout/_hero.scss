@@ -1,9 +1,9 @@
 .hero{
-    @include flex-center;
-    /* HUSK AT SLETTE DEN FØRST ../ SÅ DEN KAN VISES UDEN LIVE SERVER */ 
-    background-image: url(../../assets/headers/front.jpg); 
+    @include flex-center; 
+    background-image: url(../assets/headers/front.jpg); 
     @include cover-background;
     height: 700px;
+    width: 100%;
     font-family: $font-quick-sand;
 
     .hero-content{
@@ -45,12 +45,24 @@
 
 @media only screen and (min-width: $tablet) {
     .hero{
+
         .hero-content{
             width: 668px;
             
             button{
                 width: 608px;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .hero{
+        height: 100vh;
+
+        .hero-content{
+            position: absolute;
+            left: 15px;
         }
     }
 }
