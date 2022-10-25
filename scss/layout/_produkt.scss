@@ -1,0 +1,40 @@
+#product-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-api-container{
+    @include flex-center-column;
+    font-family: $font-quick-sand;
+    height: auto;
+    max-width: 320px;
+    margin: auto;
+    
+    .product-image{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+    }
+    
+    .product-headline{
+        box-shadow: 0 3px 6px $box-shadow-color;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 46px;
+        
+        .title{
+            font-size: 22px;
+            padding: 15px 0 0 10px;
+        }
+        
+        .product-price{
+            font-weight: bold;
+            font-size: 18px;
+            padding: 7px 0 20px 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+  
+}

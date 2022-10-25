@@ -7,24 +7,23 @@ Promise.all([
     .then(function(res) {
         return res.json();
     })
-    .then(function(productData) {
+    .then(function(recommendedData) {
 
             let product = "";
-            for (let i = 0; i < productData.length; i++) {
-                if (Object.recommended == true){   
-                    return (  
+            for (let i = 0; i < recommendedData.length; i++) {
+                    if(recommendedData[i].recommended == true || recommendedData[i].discountInPercent == 'string') {                      
                 product += `
                     <div class='product-api-container'>
-                        <img class='product-image' src='${productData[i].image}'>
-                            <div class='product'>
-                                <h1>${productData[i].title}</h1>
-                                <p class='product-headline'>${productData[i].price}</p>
+                        <img class='product-image'src='${recommendedData[i].image}'>
+                            <div class='product-headline'>
+                                <p class='discount'>spar ${recommendedData[i].discountInPercent}%</p>
+                                <p class='title'>${recommendedData[i].title}</p>
+                                <p class='product-price'>${recommendedData[i].price},00kr.</p>
                             </div>
                     </div>
-                  `
-                  )
-                }
+                `
             }
+        }
             document.querySelector('#product-container').innerHTML = product;
         }
     ),
