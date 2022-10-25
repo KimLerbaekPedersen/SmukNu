@@ -11,7 +11,8 @@ Promise.all([
 
             let product = "";
             for (let i = 0; i < productData.length; i++) {
-                if (recommended == true){   
+                if (Object.recommended == true){   
+                    return (  
                 product += `
                     <div class='product-api-container'>
                         <img class='product-image' src='${productData[i].image}'>
@@ -21,6 +22,7 @@ Promise.all([
                             </div>
                     </div>
                   `
+                  )
                 }
             }
             document.querySelector('#product-container').innerHTML = product;
