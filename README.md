@@ -1,2 +1,5 @@
-# SmukNu
-Eksamens Opgave
+# Kim Lerbæk Pedersen
+
+# WebH120-2
+
+# SmukNu 
