@@ -229,6 +229,8 @@ footer div {
 
 #product-container {
   display: flex;
+  justify-content: center;
+  height: auto;
   flex-wrap: wrap;
 }
 
@@ -238,7 +240,6 @@ footer div {
   justify-content: center;
   flex-direction: column;
   font-family: "Quicksand", sans-serif;
-  height: auto;
   max-width: 320px;
   margin: auto;
 }
@@ -252,6 +253,7 @@ footer div {
   width: 100%;
   border-radius: 0 0 15px 15px;
   margin-bottom: 46px;
+  position: relative;
 }
 .product-api-container .product-headline .title {
   font-size: 22px;
@@ -261,6 +263,25 @@ footer div {
   font-weight: bold;
   font-size: 18px;
   padding: 7px 0 20px 10px;
+}
+.product-api-container .discount-container {
+  position: absolute;
+}
+.product-api-container .discount-container .discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  background-color: #FA96AA;
+  color: #F3EDED;
+  width: 100px;
+  height: 60px;
+  border-radius: 15px;
+  position: relative;
+  left: 100px;
+  top: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .review-header {
