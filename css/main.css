@@ -189,8 +189,8 @@ footer div {
     height: 100vh;
   }
   .hero .hero-content {
-    position: absolute;
-    left: 15px;
+    width: 800px;
+    height: 500px;
   }
 }
 .member {
