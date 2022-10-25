@@ -1,5 +1,5 @@
-# Kim Lerbæk Pedersen
+## Navn : Kim Lerbæk Pedersen
 
-# WebH120-2
+## Hold : WebH120-2
 
-# SmukNu 
+## Opgave : SmukNu 
