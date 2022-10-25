@@ -150,14 +150,15 @@ footer div {
   flex-direction: column;
   text-align: center;
 }
-.hero .hero-content h1 {
+.hero .hero-content .hero-header {
   font-size: 54px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0 62px 14px 62px;
+  margin: 0 62px 19px 62px;
 }
-.hero .hero-content h1 p {
+.hero .hero-content p {
   font-size: 18px;
+  padding-bottom: 27px;
 }
 .hero .hero-content span {
   text-transform: uppercase;
@@ -172,7 +173,7 @@ footer div {
   font-weight: bold;
   font-size: 18px;
   color: #fff;
-  margin-top: 24px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 728px) {
@@ -202,16 +203,18 @@ footer div {
   justify-content: center;
   text-align: center;
 }
-.member div h1 {
-  margin: 44px 66px 0 66px;
+.member .member-content {
+  padding: 45px 30px;
+}
+.member .member-content h1 {
   font-size: 54px;
   font-weight: bold;
 }
-.member div p {
+.member .member-content p {
   margin: 14px 0 22px 0;
   font-size: 18px;
 }
-.member div button {
+.member .member-content button {
   background-color: #FA96AA;
   width: 320px;
   height: 60px;
@@ -220,11 +223,11 @@ footer div {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
   color: #fff;
   font-size: 18px;
-  margin-bottom: 70px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-h1 {
+.review-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +239,7 @@ h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
-h1 span {
+.review-header span {
   display: flex;
   justify-content: center;
   color: #FA96AA;
@@ -248,6 +251,22 @@ h1 span {
   justify-content: center;
   height: auto;
   margin-top: 44px;
+}
+
+.product-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 54px;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+.product-header span {
+  color: #FA96AA;
 }
 
 .review-content {

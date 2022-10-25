@@ -13,21 +13,23 @@
         @include flex-center-column;
         text-align: center;
         
-        h1{
+        .hero-header{
             font-size: 54px;
             font-weight: bold;
             text-transform: uppercase;
-            margin: 0 62px 14px 62px;
+            margin: 0 62px 19px 62px;
             
-            p{
-                font-size: 18px;
-            }
+        }
+
+        p{
+            font-size: 18px;
+            padding-bottom: 27px;
         }
         
         span{
             text-transform: uppercase;
         }
-        
+
         button{
             background-color: $btn-color;
             width: 320px;
@@ -38,7 +40,7 @@
             font-weight: bold;
             font-size: 18px;
             color: $font-color-white;
-            margin-top: 24px;
+            cursor: pointer;
         }
     }
 }

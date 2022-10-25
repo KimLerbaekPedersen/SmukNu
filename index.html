@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo/smuknu_logo.png" type="image/png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -18,9 +19,9 @@
             <nav id="menu">
                 <ul>
                     <li><a href="index.html">Forsiden</a></li>
-                    <li><a href="#">Vores produkter</a></li>
-                    <li><a href="#">Spørg om sundhed</a></li>
-                    <li><a href="#">Bliv medlem</a></li>
+                    <li><a href="html/produkter.html">Vores produkter</a></li>
+                    <li><a href="html/sundhed.html">Spørg om sundhed</a></li>
+                    <li><a href="html/medlem.html">Bliv medlem</a></li>
                 </ul>
             </nav>
             <div onclick="menuShow()" id="burger">
@@ -36,22 +37,22 @@
 <!-- HERO START -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Skønhed for alle</h1>
+        <h1 class="hero-header">Skønhed for alle</h1>
         <p>Alt hvad du behøver... <br> <span>Smuk Nu</span></p>
-        <a href="#"><button>Se udvalgte produkter</button></a>
+        <a href="html/produkter.html"><button>Se udvalgte produkter</button></a>
     </div>
 </section>
 <!-- HERO END -->
 
 <!-- PRODUCT SECTION START -->
-<h1>Udvalgt <br> <span>Skønhed</span></h1>
+<h1 class="product-header">Udvalgt <br> <span>Skønhed</span></h1>
 <section class="product-container">
     <div class="product-content"></div>
 </section>
 <!-- PRODUCT SECTION END -->
 
 <!-- REVIEWS SECTION START -->
-<h1>Skønheder <br> <span>Udtaler</span></h1>
+<h1 class="review-header">Skønheder <br> <span>Udtaler</span></h1>
     <div class="review-content">
         <img src="assets/reviews/phoebe_larsen.jpg" alt="">
         <p class="review">Jeg døjer rigtig meget med uren hud, og har prøvet alt muligt. Jeg fik <strong>Honest</strong> produkter anbefalet som en 30 dags kur, hvor jeg KUN skulle bruge den morgen og aften. Det har jeg så prøvet nu, og jeg kan se en tydelig forskel. Et ekstra plus er, at den er dejlig fugtgivende.
@@ -75,7 +76,7 @@
     <div class="member-content">
         <h1>Medlem?</h1>
         <p>Vær med i kundeklubben for nye <br> videoer, rabatkoder og mere!</p>
-        <a href="#"><button>Bliv medlem af kundeklubben</button></a>
+        <a href="html/medlem.html"><button>Bliv medlem af kundeklubben</button></a>
     </div>
 </section>
 <!-- MEMBER SECTION END -->
@@ -94,6 +95,6 @@
     </div>
 </footer>
 <!-- FOOTER END -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 </html>
