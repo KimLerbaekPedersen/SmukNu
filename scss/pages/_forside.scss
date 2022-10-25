@@ -16,13 +16,6 @@
 // H1 AND SPAN STYLE END
 
 // STYLE PRODUKT SECTION START
-.product-container{
-    @include flex-center;
-    height: auto;
-    margin-top: 44px;
-
-}
-
 .product-header{
     @include flex-center-column;
     font-weight: bold;
