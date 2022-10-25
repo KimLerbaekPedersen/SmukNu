@@ -189,8 +189,8 @@ footer div {
     height: 100vh;
   }
   .hero .hero-content {
-    position: absolute;
-    left: 15px;
+    width: 800px;
+    height: 500px;
   }
 }
 .member {
@@ -243,14 +243,6 @@ footer div {
   display: flex;
   justify-content: center;
   color: #FA96AA;
-}
-
-.product-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  margin-top: 44px;
 }
 
 .product-header {
