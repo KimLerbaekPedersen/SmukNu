@@ -1,7 +1,25 @@
 /*  
-En Scroll function der gør at når du scroller over 0px af Y aksen akitiveres og 
+En Scroll function til navbar der gør at når du scroller over 0px af Y aksen akitiveres og 
 tilføjes "affix" classen med sort baggrund.
  */
 function menuShow() {
     document.querySelector("#menu").classList.toggle("show");
 }
+// NAVBAR END
+
+// ACCORDION START
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+// ACCORDION END

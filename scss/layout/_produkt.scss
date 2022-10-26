@@ -54,5 +54,16 @@
             font-weight: bold;
         }
     }
+}
 
+@media only screen and (min-width: $tablet) {
+    .product-api-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .product-api-container{
+        margin: 0 50px 0 50px;
+    }
 }
