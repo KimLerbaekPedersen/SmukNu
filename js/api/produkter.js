@@ -11,7 +11,6 @@ Promise.all([
 
             let product = "";
             for (let i = 0; i < recommendedData.length; i++) {
-                if (recommendedData[i].recommended == true) {
                     product += `
                     <div class='product-api-container'>
                     <div class='discount-container'>
@@ -24,9 +23,8 @@ Promise.all([
                             </div>
                     </div>
                 `
-                }
             }
-            document.querySelector('#forside-product-container').innerHTML = product;
+            document.querySelector('#product-container').innerHTML = product;
         }
         ),
 ]);
