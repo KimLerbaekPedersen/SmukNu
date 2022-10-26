@@ -11,13 +11,13 @@
 // LAYOUT IMPORT START
 @import 'layout/footer';
 @import 'layout/navbar';
-@import 'layout/hero';
 @import 'layout/medlemBox';
 @import 'layout/produkt';
 // LAYOUT IMPORT END  
 
 // PAGES IMPORT START  
 @import 'pages/forside';
+@import 'layout/heroForside';
 @import 'pages/medlem';
 @import 'pages/produkter';
 @import 'pages/sundhed';
