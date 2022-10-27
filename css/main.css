@@ -41,10 +41,6 @@ footer div {
   z-index: 2;
 }
 
-.open {
-  background-color: rgba(0, 0, 0, 0.9019607843);
-}
-
 .nav-container {
   display: flex;
   position: relative;
@@ -78,6 +74,9 @@ footer div {
   -webkit-text-decoration: underline #FA96AA;
           text-decoration: underline #FA96AA;
 }
+#menu.open {
+  background-color: rgba(0, 0, 0, 0.9019607843);
+}
 
 #burger-icon {
   display: none;
@@ -102,19 +101,19 @@ footer div {
     border: none;
     outline: none;
   }
-  nav {
+  #menu {
     position: absolute;
     right: 0;
     top: 80px;
-    -webkit-clip-path: ellipse(100% 0% at 30% 0%);
-            clip-path: ellipse(100% 0% at 30% 0%);
+    -webkit-clip-path: ellipse(100% 0% at 0% 0%);
+            clip-path: ellipse(100% 0% at 0% 0%);
     transition: all 1000ms ease-in-out;
     width: 100%;
   }
-  nav ul {
+  #menu ul {
     flex-direction: column;
   }
-  nav.open {
+  #menu.open {
     -webkit-clip-path: ellipse(100% 100% at 20% 40%);
             clip-path: ellipse(100% 100% at 20% 40%);
     transition-duration: 1000ms;
@@ -457,7 +456,6 @@ hr {
   height: 700px;
   width: 100%;
   font-family: "Quicksand", sans-serif;
-  margin-bottom: 35px;
 }
 .medlem-hero .medlem-hero-content {
   background-color: #fff;
@@ -498,7 +496,7 @@ hr {
     height: 500px;
   }
 }
-.medlem-form-section {
+.medlem-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,27 +505,27 @@ hr {
   width: 85%;
   margin: auto;
 }
-.medlem-form-section input {
+.medlem-form-container input {
   border: 1px solid #707070;
   height: 40px;
   width: 100%;
   margin: 10px 0 10px 0;
 }
-.medlem-form-section input:focus {
+.medlem-form-container input:focus {
   outline: none;
   border: 3px solid #FA96AA;
 }
-.medlem-form-section textarea {
+.medlem-form-container textarea {
   border: 1px solid #707070;
   width: 100%;
   margin: 10px 0 10px 0;
   height: 220px;
 }
-.medlem-form-section textarea:focus {
+.medlem-form-container textarea:focus {
   outline: none;
   border: 3px solid #FA96AA;
 }
-.medlem-form-section .medlem-btn {
+.medlem-form-container .medlem-btn {
   background-color: #FA96AA;
   color: #fff;
   border: none;
@@ -539,46 +537,60 @@ hr {
   font-weight: bold;
   align-self: flex-start;
 }
-.medlem-form-section .medlem-btn:hover {
+.medlem-form-container .medlem-btn:hover {
   background-color: #f8c4da;
 }
-.medlem-form-section p {
+.medlem-form-container p {
   align-self: flex-start;
   color: #707070;
   font-size: 20px;
 }
-.medlem-form-section .valid {
+.medlem-form-container .form-paragraph {
+  margin-top: 35px;
+}
+.medlem-form-container .test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.medlem-form-container .test .valid-message {
   display: none;
   text-align: center;
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 640px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 50px;
   background-color: #F7F0F2;
   font-family: "Quicksand", sans-serif;
 }
-.medlem-form-section .valid h1 {
+.medlem-form-container .test .valid-message h1 {
   font-size: 54px;
   padding: 20px 0 20px 0;
 }
-.medlem-form-section .valid .form-name {
+.medlem-form-container .test .valid-message .form-name {
   color: #FA96AA;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.medlem-form-section .valid .medlem-txt {
+.medlem-form-container .test .valid-message .medlem-txt {
   font-size: 18px;
   text-align: center;
   padding-bottom: 40px;
 }
-.medlem-form-section .valid .padding-top {
+.medlem-form-container .test .valid-message .padding-top {
   padding-top: 40px;
 }
-.medlem-form-section .valid img {
+.medlem-form-container .test .valid-message img {
   border-radius: 50%;
-  border: 10px solid #FA96AA;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #FA96AA;
 }
-.medlem-form-section .valid .medlem-succes-btn {
+.medlem-form-container .test .valid-message .medlem-succes-btn {
   border: none;
   background-color: #FA96AA;
   width: 320px;
@@ -591,16 +603,24 @@ hr {
   color: #fff;
   cursor: pointer;
 }
-
-.bad-response-txt {
+.medlem-form-container .bad-response-txt {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
   height: 100%;
   width: 100%;
 }
 
+@media only screen and (min-width: 380px) and (max-width: 1024px) {
+  .valid-message {
+    transform: translateY(27%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .valid-message {
+    transform: translateY(88%);
+  }
+}
 .product-hero {
   display: flex;
   align-items: center;

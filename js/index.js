@@ -8,8 +8,8 @@ function openMenu() {
 // NAVBAR END
 
 // ACCORDION START
-let acc = document.getElementsByClassName("accordion");
-let i;
+let acc = document.querySelectorAll(".test");
+console.log(acc)
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {

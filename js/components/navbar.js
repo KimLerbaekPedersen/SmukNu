@@ -11,7 +11,7 @@ nav.innerHTML += `<header id="nav">
             <li><a href="../html/medlem.html">Bliv medlem</a></li>
         </ul>
     </nav>
-    <div onclick="openMenu()" id="burger">
+    <div onclick="openMenu()" id="burger-icon">
         <i class="fa-solid fa-bars fa-2x"></i>
     </div>
 </div>
