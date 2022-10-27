@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,47 +11,54 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Medlem</title>
 </head>
+
 <body>
-     <!-- IMPORT NAVBAR FROM JS START -->
-     <div id="navbar"></div>
-     <!-- IMPORT NAVBAR FROM JS END -->
- 
-     <!-- PRODUCTS HERO START -->
-     <section class="medlem-hero">
+    <!-- IMPORT NAVBAR FROM JS START -->
+    <div id="navbar"></div>
+    <!-- IMPORT NAVBAR FROM JS END -->
+
+    <!-- PRODUCTS HERO START -->
+    <section class="medlem-hero">
         <div class="medlem-hero-content">
             <h1 class="medlem-hero-header">BLIV MEDLEM</h1>
-            <p>Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem. <br> <br> Send gerne ris eller ros med når du melder dig ind, vi er altid parate til dialog.</p>
+            <p>Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem. <br> <br> Send gerne ris
+                eller ros med når du melder dig ind, vi er altid parate til dialog.</p>
         </div>
     </section>
     <!-- PRODUCTS HERO END -->
 
     <!-- OPRET MEDLEM START -->
-            <form class="medlem-form-section">
-                <p>Fulde navn</p>
-                <input class="name medlem-field-1" type="name" name="name" required>
-                <p>E-mail</p>
-                <input class="email medlem-field-2" type="email" name="email" required>
-                <p>Ris og/eller ros</p>
-                <textarea class="message medlem-field-3" type="text" name="message" cols="50" rows="8"></textarea>
-                <button class="medlem-btn" value="submit" type="submit">Opret</button>
-                
-                <div class="valid">
-                    <h1>TAK!</h1>
-                    <p class="form-name">Birthe Marie Hansen</p>
-                    <p class="medlem-txt">Vi er enormt glade for at få dig som medlem.</p>
-                    <img src="../assets/products/succes.jpg" alt="">
-                    <p class="medlem-txt padding-top">Kig I din inbox vi har sendt en lille velkomst gave.</p> 
-                    <a href="../index.html"><button class="medlem-succes-btn">Til Forsiden</button></a>
-                </div>
-            </form>
+    <div class="medlem-form-container">
+    <form class="medlem-form-section">
+        <p class="form-paragraph">Fulde navn</p>
+        <input class="name medlem-field-1" type="name" name="name" required>
+        <p>E-mail</p>
+        <input class="email medlem-field-2" type="email" name="email" required>
+        <p>Ris og/eller ros</p>
+        <textarea class="message medlem-field-3" maxlength="150" type="text" name="message" cols="50" rows="8"></textarea>
+        <button class="medlem-btn" value="submit" type="submit">Opret</button>
+        
+    </form>
+    <div class="test">
+        <div class="valid-message">
+            <h1>TAK!</h1>
+            <p class="form-name">Place Holder</p>
+            <p class="medlem-txt">Vi er enormt glade for at få dig som medlem.</p>
+            <img src="../assets/products/succes.jpg" alt="">
+            <p class="medlem-txt padding-top">Kig I din inbox vi har sendt en lille velkomst gave.</p>
+            <a href="../index.html"><button class="medlem-succes-btn">Til Forsiden</button></a>
+        </div>
+    </div>
+</div>
     <!-- OPRET MEDLEM END -->
 
-     <!-- IMPORT FOOTER FROM JS START -->
-     <div id="footer"></div>
-     <!-- IMPORT FOOTER FROM JS END-->
-     <script src="../js/index.js" defer></script>
-     <script src="../js/components/navbar.js" defer></script>
-     <script src="../js/api/medlemApi.js" defer></script>
-     <script src="../js/components/footer.js" defer></script>
+    <!-- IMPORT FOOTER FROM JS START -->
+    <div id="footer"></div>
+    <!-- IMPORT FOOTER FROM JS END-->
+    <script src="../js/index.js" defer></script>
+    <script src="../js/components/navbar.js" defer></script>
+    <script src="../js/api/medlemApi.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
 </body>
+
 </html>

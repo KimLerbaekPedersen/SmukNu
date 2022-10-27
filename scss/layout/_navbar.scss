@@ -4,111 +4,112 @@
 }
 
 #nav {
-    position: fixed;
+	position: fixed;
 	background-color: $navbar-bg-color;
 	width: 100%;
 	z-index: 2;
 }
 
-.open{
-    background-color: $burgermenu-bg-color;
-}
-
 .nav-container {
-    display: flex;
+	display: flex;
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
 	height: 80px;
-    padding: 0 14px 0 14px;
+	padding: 0 14px 0 14px;
 	box-shadow: 0 3px 6px $box-shadow-color;
 }
 
 #menu {
 	cursor: pointer;
-    border-radius: 0 0 15px 15px;
-    font-family: $font-quick-sand;
-    
+	border-radius: 0 0 15px 15px;
+	font-family: $font-quick-sand;
+
 	ul {
 		display: flex;
 		list-style: none;
-		margin: 14px 14px 18px 0;    
+		margin: 14px 14px 18px 0;
 		align-items: flex-end;
-        gap: 15px;
+		gap: 15px;
 	}
-	
+
 	a {
 		text-decoration: none;
-        text-transform: uppercase;
+		text-transform: uppercase;
 		color: $font-color-black;
-        font-weight: bold;
+		font-weight: bold;
+
 		&:hover {
 			color: $font-color-pink;
-            text-decoration: underline #FA96AA;
+			text-decoration: underline #FA96AA;
 		}
+	}
+
+	&.open {
+		background-color: $burgermenu-bg-color;
 	}
 }
 
-#burger-icon{
+#burger-icon {
 	display: none;
 	width: 27px;
 	height: 27px;
-    margin-bottom: 7px;
+	margin-bottom: 7px;
 
-	i{
+	i {
 		color: $btn-color;
 
-		&:hover{
+		&:hover {
 			color: $btn-hover-color;
 		}
 	}
 }
 
 @media (max-width: $desktop) {
-	#burger-icon{
+	#burger-icon {
 		display: block;
 		cursor: pointer;
 		z-index: 2;
-		&:focus{
+
+		&:focus {
 			border: none;
 			outline: none;
 		}
 	}
 
-	nav {
+	#menu {
 		position: absolute;
 		right: 0;
 		top: 80px;
-		clip-path: ellipse(100% 0% at 30% 0%);
+		clip-path: ellipse(100% 0% at 0% 0%);
 		transition: all 1000ms ease-in-out;
 		width: 100%;
 
 		ul {
 			flex-direction: column;
 		}
-		
+
+		&.open {
+			clip-path: ellipse(100% 100% at 20% 40%);
+			transition-duration: 1000ms;
+		}
 	}
 
-	nav.open {
-		clip-path: ellipse(100% 100% at 20% 40%);
-		transition-duration: 1000ms;
-	}
-	
-	.nav-container{
+	.nav-container {
 		padding-right: 15px;
 	}
 
 	#menu {
-		a{
+		a {
 			color: $font-color-white;
-            font-weight: bold;
-            text-transform: uppercase;
+			font-weight: bold;
+			text-transform: uppercase;
 		}
 
-		ul{
-				&:hover {
-					color: #FA96AA;
-				}
+		ul {
+			&:hover {
+				color: #FA96AA;
 			}
 		}
 	}
+}
