@@ -41,6 +41,10 @@
             font-size: 18px;
             color: $font-color-white;
             cursor: pointer;
+
+            &:hover{
+                background-color: $btn-hover-color;
+            }
         }
     }
 }
