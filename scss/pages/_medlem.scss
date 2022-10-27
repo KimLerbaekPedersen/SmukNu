@@ -97,6 +97,10 @@
         cursor: pointer;
         font-weight: bold;
         align-self: flex-start;
+
+        &:hover{
+            background-color: $btn-hover-color;
+        }
     }
 
     p{

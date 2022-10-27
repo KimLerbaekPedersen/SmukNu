@@ -1,14 +1,14 @@
-const onSubmit = (e) => {
+const onSubmit = (event) => {
 
-    e.preventDefault();
+    event.preventDefault();
 
     let resultElement = document.querySelector('.valid');
     const getFormName = document.querySelector('.form-name');
 
     let postObj = {
-        "name" : e.target.elements.name.value,
-        "email" : e.target.elements.email.value,
-        "message" : e.target.elements.message.value,
+        "name" : event.target.elements.name.value,
+        "email" : event.target.elements.email.value,
+        "message" : event.target.elements.message.value,
     } 
 
 fetch('https://smuknu.webmcdm.dk/subscribe', {
@@ -19,28 +19,27 @@ fetch('https://smuknu.webmcdm.dk/subscribe', {
         'Content-Type': 'application/json;charset=UTF-8'
     }   
 })
-.then((response) => {
-    console.log('--->', response, response.ok)
+.then((res) => {
+    console.log('--->', res, res.ok)
     
-    return response.json()
+    return res.json()
 })
-.then(response => {
+.then(res => {
     console.log('--->hey') 
-    if(response.result.name !== undefined){
+    // GET THE RESPONSE MESSAGE BOTH SUCCES AND ERROR 
+    if(res.result.name !== undefined){
 
-    getFormName.innerHTML = response.result.name
+        getFormName.innerHTML = res.result.name
 
     }else{
-        resultElement.innerHTML = `<h1 class='bad-response-txt' style='font-size: 30px;'>${response.result}</h1>`
+        resultElement.innerHTML = `<h1 class='bad-response-txt' style='font-size: 30px;'>${res.result}</h1>`
     }
+    // GET THE RESPONSE MESSAGE BOTH SUCCES AND ERROR 
+
     // SHOW VALIDATION MESSAGE START 
         document.querySelector('.valid').style.display = 'block';
     // SHOW VALIDATION MESSAGE END 
 })
-
 }
-  
 const contactForm = document.querySelector('.medlem-form-section');
 contactForm.addEventListener('submit', onSubmit)
-
-

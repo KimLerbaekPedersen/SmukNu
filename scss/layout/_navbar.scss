@@ -10,7 +10,7 @@
 	z-index: 2;
 }
 
-.show{
+.open{
     background-color: $burgermenu-bg-color;
 }
 
@@ -25,7 +25,6 @@
 }
 
 #menu {
-    transition: all 800ms ease;
 	cursor: pointer;
     border-radius: 0 0 15px 15px;
     font-family: $font-quick-sand;
@@ -50,16 +49,23 @@
 	}
 }
 
-#burger{
+#burger-icon{
 	display: none;
 	width: 27px;
 	height: 27px;
     margin-bottom: 7px;
-    fill: $burgermenu-icon-color;
+
+	i{
+		color: $btn-color;
+
+		&:hover{
+			color: $btn-hover-color;
+		}
+	}
 }
 
 @media (max-width: $desktop) {
-	#burger {
+	#burger-icon{
 		display: block;
 		cursor: pointer;
 		z-index: 2;
@@ -73,9 +79,8 @@
 		position: absolute;
 		right: 0;
 		top: 80px;
-		clip-path: circle(0% at 100% 0);
-		transition: all 800ms ease-in-out;
-		height: 168px;
+		clip-path: ellipse(100% 0% at 30% 0%);
+		transition: all 1000ms ease-in-out;
 		width: 100%;
 
 		ul {
@@ -84,9 +89,9 @@
 		
 	}
 
-	nav.show {
-		clip-path: circle(200% at 100% 0);
-		transition-duration: 800ms;
+	nav.open {
+		clip-path: ellipse(100% 100% at 20% 40%);
+		transition-duration: 1000ms;
 	}
 	
 	.nav-container{
