@@ -1,18 +1,18 @@
-#forside-product-container{
+#product-container{
     display: flex;
     justify-content: center;
-    height: auto;
     flex-wrap: wrap;
 }
 
 .product-api-container{
     @include flex-center-column;
     font-family: $font-quick-sand;
-    max-width: 320px;
-    margin: auto;
+    max-width: 300px;
+    margin: 60px 30px 0 30px;
     
     .product-image{
         border-radius: 15px 15px 0 0;
+        max-height: 300px;
         width: 100%;
         border-bottom: 1px solid $border-color;
     }
@@ -22,11 +22,11 @@
         width: 100%;
         border-radius: 0 0 15px 15px;
         margin-bottom: 46px;
-        min-height: 180px;
         
         .title{
             font-size: 22px;
             padding: 15px 0 0 10px;
+            min-height: 100px;
         }
         
         .product-price{
@@ -49,22 +49,17 @@
             height: 60px;
             border-radius: 15px;
             position: relative;
-            left: 100px;
-            top: 35px;
+            left: 75px;
+            top: 0;
             text-transform: uppercase;
             font-weight: bold;
         }
     }
 }
 
-@media only screen and (min-width: $tablet) {
-    .product_api-container{
-        margin: 0 100px 0 100px;
-    }
-}
-
-@media only screen and (min-width: $desktop) {
-    .product-api-container{
-        margin: 0 50px 0 50px;
+@media only screen and (min-width: 2500px) {
+    #product-container{
+        margin: auto;
+        max-width: 60%;
     }
 }

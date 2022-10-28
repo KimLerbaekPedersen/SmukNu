@@ -26,7 +26,7 @@ Promise.all([
                 `
                 }
             }
-            document.querySelector('#forside-product-container').innerHTML = product;
+            document.querySelector('#product-container').innerHTML = product;
         }
         ),
 ]);

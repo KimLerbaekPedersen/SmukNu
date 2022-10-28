@@ -40,8 +40,8 @@
 		font-weight: bold;
 
 		&:hover {
-			color: $font-color-pink;
-			text-decoration: underline #FA96AA;
+			border-bottom: 3px solid #FA96AA;
+			border-radius: 8px;
 		}
 	}
 
