@@ -16,6 +16,7 @@ footer {
   height: 143px;
   background-color: #D9D9D9;
   width: 100%;
+  font-family: "Quicksand", sans-serif;
 }
 footer .soMe-icon {
   display: flex;
@@ -70,9 +71,8 @@ footer div {
   font-weight: bold;
 }
 #menu a:hover {
-  color: #FA96AA;
-  -webkit-text-decoration: underline #FA96AA;
-          text-decoration: underline #FA96AA;
+  border-bottom: 3px solid #FA96AA;
+  border-radius: 8px;
 }
 #menu.open {
   background-color: rgba(0, 0, 0, 0.9019607843);
@@ -206,10 +206,9 @@ footer div {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-weight: bold;
   font-size: 54px;
   text-transform: uppercase;
-  padding-bottom: 50px;
+  padding: 30px 0 30px 0;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
@@ -228,9 +227,6 @@ footer div {
   border-radius: 50%;
   border: 10px solid #FA96AA;
 }
-.review-content strong {
-  font-weight: bold;
-}
 .review-content .review {
   padding: 45px 40px 0 40px;
 }
@@ -243,76 +239,58 @@ hr {
   margin: auto;
   width: 85%;
   color: #FA96AA;
-}
-
-.review-two {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  color: #707070;
-}
-.review-two .name {
-  padding-top: 20px;
-  margin-bottom: 18px;
-}
-.review-two .review {
-  padding: 45px 40px 0 40px;
-}
-.review-two strong {
-  font-weight: bold;
-}
-.review-two img {
-  margin-top: 55px;
-  border-radius: 50%;
-  border: 10px solid #FA96AA;
-}
-.review-two hr {
   margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 728px) and (max-width: 1024px) {
-  .review-content, .review-two {
-    display: grid;
-    grid-template: repeat(2, auto)/repeat(3, auto);
+  hr {
+    display: none;
   }
-  .review-content .review {
+  .review-content,
+.review-two {
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+  }
+  .content-left .review {
     padding: 0 !important;
     align-self: center;
     text-align: left;
     width: 85%;
   }
-  .review-content .name {
+  .content-left .name {
     grid-row-start: 2;
-    margin: 0 0 50px 20px;
   }
-  .review-content img {
+  .content-left img {
     grid-column-start: 1;
     grid-row-start: 1;
     margin: 0 30px 0 50px;
   }
-  hr {
-    display: none;
+  .content-left .byline {
+    grid-row-start: 3;
+    margin-bottom: 50px;
   }
-  .review-two .review {
+  .content-right .review {
     grid-row-start: 1;
+    align-self: center;
     text-align: left;
   }
-  .review-two .name {
+  .content-right .name {
     grid-column-start: 3;
-    margin: 0 0 50px 20px;
     align-self: flex-start;
   }
-  .review-two img {
+  .content-right img {
     align-self: flex-end;
     grid-column-start: 3;
     margin: 0 30px 0 50px;
   }
+  .content-right .byline {
+    grid-column-start: 3;
+    margin-bottom: 50px;
+  }
 }
-#forside-product-container {
+#product-container {
   display: flex;
   justify-content: center;
-  height: auto;
   flex-wrap: wrap;
 }
 
@@ -322,11 +300,12 @@ hr {
   justify-content: center;
   flex-direction: column;
   font-family: "Quicksand", sans-serif;
-  max-width: 320px;
-  margin: auto;
+  max-width: 300px;
+  margin: 60px 30px 0 30px;
 }
 .product-api-container .product-image {
   border-radius: 15px 15px 0 0;
+  max-height: 300px;
   width: 100%;
   border-bottom: 1px solid #FA96AA;
 }
@@ -335,11 +314,11 @@ hr {
   width: 100%;
   border-radius: 0 0 15px 15px;
   margin-bottom: 46px;
-  min-height: 180px;
 }
 .product-api-container .product-headline .title {
   font-size: 22px;
   padding: 15px 0 0 10px;
+  min-height: 100px;
 }
 .product-api-container .product-headline .product-price {
   bottom: 0;
@@ -361,20 +340,16 @@ hr {
   height: 60px;
   border-radius: 15px;
   position: relative;
-  left: 100px;
-  top: 35px;
+  left: 75px;
+  top: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-@media only screen and (min-width: 728px) {
-  .product_api-container {
-    margin: 0 100px 0 100px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .product-api-container {
-    margin: 0 50px 0 50px;
+@media only screen and (min-width: 2500px) {
+  #product-container {
+    margin: auto;
+    max-width: 60%;
   }
 }
 .hero {
@@ -672,15 +647,6 @@ hr {
     height: 500px;
   }
 }
-#product-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  max-width: 85%;
-  height: auto;
-  flex-wrap: wrap;
-}
-
 .sundhed-hero {
   display: flex;
   align-items: center;
