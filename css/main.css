@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -242,6 +243,11 @@ hr {
   margin-bottom: 60px;
 }
 
+/*  
+Her laver jeg en media query til tablet til mit review content og 
+fortæller at på desktop skal det være ligesom på mobile 
+så jeg kan sætte det op på den måde som opgaven er vist i xd 
+*/
 @media only screen and (min-width: 728px) and (max-width: 1024px) {
   hr {
     display: none;
@@ -286,6 +292,14 @@ hr {
   .content-right .byline {
     grid-column-start: 3;
     margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .review {
+    margin: 0 140px 0 140px;
+  }
+  hr {
+    width: 70%;
   }
 }
 #product-container {
@@ -523,14 +537,14 @@ hr {
 .medlem-form-container .form-paragraph {
   margin-top: 35px;
 }
-.medlem-form-container .test {
+.medlem-form-container .valid-container {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: center;
   align-items: center;
 }
-.medlem-form-container .test .valid-message {
+.medlem-form-container .valid-container .valid-message {
   display: none;
   text-align: center;
   width: 100%;
@@ -541,31 +555,37 @@ hr {
   background-color: #F7F0F2;
   font-family: "Quicksand", sans-serif;
 }
-.medlem-form-container .test .valid-message h1 {
+.medlem-form-container .valid-container .valid-message .close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: #FA96AA;
+}
+.medlem-form-container .valid-container .valid-message h1 {
   font-size: 54px;
   padding: 20px 0 20px 0;
 }
-.medlem-form-container .test .valid-message .form-name {
+.medlem-form-container .valid-container .valid-message .form-name {
   color: #FA96AA;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.medlem-form-container .test .valid-message .medlem-txt {
+.medlem-form-container .valid-container .valid-message .medlem-txt {
   font-size: 18px;
   text-align: center;
   padding-bottom: 40px;
 }
-.medlem-form-container .test .valid-message .padding-top {
+.medlem-form-container .valid-container .valid-message .padding-top {
   padding-top: 40px;
 }
-.medlem-form-container .test .valid-message img {
+.medlem-form-container .valid-container .valid-message img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   border: 5px solid #FA96AA;
 }
-.medlem-form-container .test .valid-message .medlem-succes-btn {
+.medlem-form-container .valid-container .valid-message .medlem-succes-btn {
   border: none;
   background-color: #FA96AA;
   width: 320px;
