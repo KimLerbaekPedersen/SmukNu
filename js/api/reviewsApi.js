@@ -9,7 +9,7 @@ Promise.all([
         })
         .then(function (reviewData) {
             let number = 0
-            let test
+            let contentTablet
             let review = "";
             for (let i = 0; i < reviewData.length; i++) {
 /* 
@@ -17,17 +17,17 @@ Promise.all([
     så man kan få dem til at være i henholdsvis venstre og hjøre side 
 */
                 if (number == 0) {
-                    test = 'content-left'
+                    contentTablet = 'content-left'
 
                     number++
                 } else {
-                    test = 'content-right'
+                    contentTablet = 'content-right'
 
                     number--
                 }
 
                 review += `
-                <div class='review-content ${test}'>    
+                <div class='review-content ${contentTablet}'>    
                 <img class='review-image'src='${reviewData[i].image}'>
                 <p class='review'>${reviewData[i].description}</p>
                 <p class='name'> <strong>${reviewData[i].name}</strong></p>
@@ -37,8 +37,6 @@ Promise.all([
                 <br>
                 </div>
                 `
-
-                console.log(test);
             }
 
             document.querySelector('#review-container').innerHTML = review;

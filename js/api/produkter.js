@@ -14,6 +14,7 @@ Promise.all([
                     product += `
                     <div class='product-api-container'>
                     <div class='discount-container'>
+                     <!-- henter de produkter ud som har discountInPercent, så jeg kan få lavet en spar x% på produkt cards -->
                         ${recommendedData[i].discountInPercent == '' ? '' : `<p class='discount'>spar ${recommendedData[i].discountInPercent}%</p>`} 
                     </div>    
                         <img class='product-image'src='${recommendedData[i].image}'>

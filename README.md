@@ -4,5 +4,3 @@
 
 ## Opgave : SmukNu 
 
-## Opgave : SmukNu 
-
