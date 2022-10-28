@@ -12,6 +12,10 @@ Promise.all([
             let test
             let review = "";
             for (let i = 0; i < reviewData.length; i++) {
+/* 
+    if else statement er lavet for at added enten content-left eller right på hver review-content
+    så man kan få dem til at være i henholdsvis venstre og hjøre side 
+*/
                 if (number == 0) {
                     test = 'content-left'
 
